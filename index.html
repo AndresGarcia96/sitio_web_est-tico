@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primer Sitio Web Estático</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Bienvenidos a Mi Sitio Web</h1>
+        <nav>
+          <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#hobbies">Mis Hobbies</a></li>
+            <li><a href="#tareas">Mis Tareas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Hola, soy un estudiante de programación aprendiendo HTML, CSS y
+          JavaScript. Este es mi primer sitio web estático.
+        </p>
+        <img
+          src="./public/FOTO.jpg"
+          alt="Foto personal"
+          class="imagen-perfil"
+        />
+      </div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <div class="container">
+        <h2>Mis Hobbies</h2>
+        <ul>
+          <li>Jugar futbol</li>
+          <li>Escuchar música</li>
+          <li>Jugar videojuegos</li>
+          <li>Programar</li>
+          <li>Bailar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tareas" class="section">
+      <div class="container">
+        <h2>Tareas Prioritarias</h2>
+        <ol>
+          <li>Estudiar HTML y CSS</li>
+          <li>Aprender JavaScript</li>
+          <li>Crear un proyecto personal</li>
+          <li>Estudiar y practicar ingles</li>
+        </ol>
+
+        <h2>Mi Horario Semanal</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>Estudiar HTML</td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>Practicar CSS</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>Aprender JavaScript</td>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>Aprender y practicar ingles</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>Hacer ejercicio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="enviar.php" method="POST" id="formulario-contacto">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="motivo">Motivo de Contacto:</label>
+          <input type="text" id="motivo" name="motivo" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Mi Primer Sitio Web. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
